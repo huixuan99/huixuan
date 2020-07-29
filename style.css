@@ -26,7 +26,6 @@
 /* ***** Fonts ***** */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Shadows+Into+Light+Two');
-
 /* ***** Import CSS ***** */
 
 @import 'css/bootstrap/bootstrap.min.css';
@@ -36,7 +35,6 @@
 @import 'css/others/owl.carousel.min.css';
 @import 'css/others/font-awesome.min.css';
 @import 'css/others/pe-icon-7-stroke.css';
-
 /* --------------------
 :: 1.0 Base CSS
 -------------------- */
@@ -52,12 +50,11 @@ body {
     z-index: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.container {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     color: #232d37;
@@ -200,8 +197,7 @@ img {
     margin-left: 100px;
 }
 
-ul,
-ol {
+ul, ol {
     margin: 0;
     padding: 0;
 }
@@ -220,10 +216,7 @@ ol {
     margin-right: -15px;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a, a:hover, a:focus, a:active {
     text-decoration: none;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -235,16 +228,16 @@ li {
     list-style: none;
 }
 
-.heading_text > p {
+.heading_text>p {
     font-size: 16px;
 }
 
-.heading_text > h2 {
+.heading_text>h2 {
     font-weight: 500;
     color: #333;
 }
 
-.heading_text > h3 {
+.heading_text>h3 {
     color: #b4b4b4;
     font-size: 90px;
     font-weight: 100;
@@ -339,18 +332,17 @@ li {
     align-items: center;
 }
 
-
-.top_header_area .top_social_bar > a {
+.top_header_area .top_social_bar>a {
     font-size: 12px;
     color: #232d37;
     margin-right: 30px;
 }
 
-.top_header_area .top_social_bar > a:hover {
+.top_header_area .top_social_bar>a:hover {
     color: #fc6c3f;
 }
 
-.top_header_area .top_social_bar > a:last-of-type {
+.top_header_area .top_social_bar>a:last-of-type {
     margin-right: 0;
 }
 
@@ -458,8 +450,7 @@ li {
     font-size: 14px;
 }
 
-.navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
-.navbar.navbar-expand-lg .navbar-nav .active .nav-link {
+.navbar.navbar-expand-lg .navbar-nav .nav-link:hover, .navbar.navbar-expand-lg .navbar-nav .active .nav-link {
     color: #fc6c3f;
 }
 
@@ -470,8 +461,7 @@ li {
     text-transform: uppercase;
 }
 
-.dropdown-item:focus,
-.dropdown-item:hover {
+.dropdown-item:focus, .dropdown-item:hover {
     color: #fc6c3f;
     text-decoration: none;
     background-color: #f8f9fa;
@@ -487,7 +477,7 @@ li {
     overflow: hidden
 }
 
-.welcome-single-slide .project_title a > h5 {
+.welcome-single-slide .project_title a>h5 {
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
@@ -525,7 +515,6 @@ li {
     color: rgba(255, 255, 255, 0.9);
 }
 
-
 .welcome-single-slide .post-date-commnents a:first-child {
     margin-right: 30px;
 }
@@ -540,7 +529,6 @@ li {
     z-index: 2;
     background-color: #fff;
 }
-
 
 .welcome-post-sliders {
     position: relative;
@@ -605,14 +593,14 @@ li {
     background-color: #fc6c3f;
 }
 
-.catagory-title a > h5 {
+.catagory-title a>h5 {
     margin-bottom: 0;
     line-height: 50px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }
 
-.single_catagory:hover .catagory-title a > h5 {
+.single_catagory:hover .catagory-title a>h5 {
     color: #fff;
 }
 
@@ -635,25 +623,16 @@ li {
     justify-content: space-between;
 }
 
-.post-author a,
-.post-date a,
-.post-favourite a,
-.post-comments a,
-.post-share a {
+.post-author a, .post-date a, .post-favourite a, .post-comments a, .post-share a {
     color: #b5aec4;
     font-size: 14px;
 }
 
-.post-author a:hover,
-.post-date a:hover,
-.post-favourite a:hover,
-.post-comments a:hover,
-.post-share a:hover {
+.post-author a:hover, .post-date a:hover, .post-favourite a:hover, .post-comments a:hover, .post-share a:hover {
     color: #000;
 }
 
-.post-favourite a,
-.post-comments a {
+.post-favourite a, .post-comments a {
     margin-right: 15px;
 }
 
@@ -678,8 +657,7 @@ li {
     margin-bottom: 30px;
 }
 
-.single-post h2,
-.single-post h4 {
+.single-post h2, .single-post h4 {
     margin: 10px 0;
     color: #232d37;
     -webkit-transition-duration: 500ms;
@@ -687,8 +665,7 @@ li {
     text-transform: capitalize;
 }
 
-.single-post h2:hover,
-.single-post h4:hover {
+.single-post h2:hover, .single-post h4:hover {
     color: #fc6c3f;
 }
 
@@ -708,7 +685,6 @@ li {
     text-align: center;
 }
 
-
 .single-post .read-more:hover {
     color: #000;
     border: 1px solid #000;
@@ -716,8 +692,7 @@ li {
 
 /* List Blog Area CSS */
 
-.list-blog.single-post .post-thumb,
-.list-blog.single-post .post-content {
+.list-blog.single-post .post-thumb, .list-blog.single-post .post-content {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     margin-right: 15px;
@@ -809,7 +784,6 @@ li {
     cursor: url(img/core-img/next.png), auto !important;
 }
 
-
 /* --------------------
 :: 8.0 Footer Social Area CSS 
 -------------------- */
@@ -822,18 +796,18 @@ li {
     justify-content: space-between
 }
 
-.single-icon > a {
+.single-icon>a {
     color: #51545f;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.single-icon > a:hover {
+.single-icon>a:hover {
     color: #fc6c3f;
 }
 
-.single-icon > a > i {
+.single-icon>a>i {
     font-size: 16px;
     padding-right: 12px;
 }
@@ -866,7 +840,7 @@ li {
     justify-content: center
 }
 
-.copy_right_text > p {
+.copy_right_text>p {
     font-size: 14px;
     color: #b5aec4;
     margin-bottom: 0;
@@ -885,7 +859,6 @@ li {
     width: 100%;
 }
 
-
 /* --------------------
 :: 10.0 Sidebar Area CSS
 -------------------- */
@@ -896,7 +869,7 @@ li {
     margin-bottom: 50px;
 }
 
-.widget-title > h6 {
+.widget-title>h6 {
     background: #fee2d9;
     height: 40px;
     width: 100%;
@@ -924,13 +897,13 @@ li {
 
 /* subscribe_follow_area */
 
-.subscribe-link > a {
+.subscribe-link>a {
     font-size: 14px;
     color: #51545f;
     padding: 0 15px;
 }
 
-.subscribe-link > a:hover {
+.subscribe-link>a:hover {
     color: #fc6c3f;
 }
 
@@ -956,8 +929,7 @@ li {
     width: calc(50% - 10px);
 }
 
-.popular-post-widget .single-populer-post img,
-.popular-post-widget .single-populer-post .post-content {
+.popular-post-widget .single-populer-post img, .popular-post-widget .single-populer-post .post-content {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
 }
@@ -966,7 +938,7 @@ li {
     margin-left: 10px;
 }
 
-.popular-post-widget .single-populer-post .post-content > p {
+.popular-post-widget .single-populer-post .post-content>p {
     font-size: 14px;
     color: #b5aec4;
     font-weight: 400;
@@ -1005,8 +977,7 @@ li {
     z-index: 5;
 }
 
-.add-widget .add-text h2,
-.add-widget .add-text p {
+.add-widget .add-text h2, .add-widget .add-text p {
     color: #fff;
 }
 
@@ -1111,7 +1082,7 @@ li {
     font-size: 16px;
 }
 
-.breadcrumb-item + .breadcrumb-item:before {
+.breadcrumb-item+.breadcrumb-item:before {
     content: "\f105";
     font-family: 'FontAwesome'
 }
@@ -1135,16 +1106,13 @@ li {
     margin: 0 2.5px;
 }
 
-.pagination-area .pagination .page-item.active .page-link,
-.pagination-area .pagination .page-link:focus,
-.pagination-area .pagination .page-link:hover {
+.pagination-area .pagination .page-item.active .page-link, .pagination-area .pagination .page-link:focus, .pagination-area .pagination .page-link:hover {
     color: #fff;
     background-color: #fc6c3f;
     border-color: transparent;
 }
 
-.pagination-area .page-status p,
-.contact-info-area .single-contact-info p {
+.pagination-area .page-status p, .contact-info-area .single-contact-info p {
     margin-bottom: 0;
 }
 
@@ -1152,19 +1120,16 @@ li {
 :: 13.0 Contact Area CSS
 -------------------- */
 
-.contact-form .form-control,
-.comment-form .form-control {
+.contact-form .form-control, .comment-form .form-control {
     border: 1px solid #ebebeb;
     height: 50px;
 }
 
-.contact-form .form-control:focus,
-.comment-form .form-control:focus {
+.contact-form .form-control:focus, .comment-form .form-control:focus {
     border: 1px solid #000;
 }
 
-.contact-form textarea.form-control,
-.comment-form textarea.form-control {
+.contact-form textarea.form-control, .comment-form textarea.form-control {
     height: 130px;
 }
 
@@ -1213,7 +1178,6 @@ li {
 .single-post-share-info a.facebook {
     background-color: #4c65a8;
 }
-
 
 .single-post-share-info a.facebook:hover {
     background-color: #3555ac;
@@ -1324,8 +1288,7 @@ li {
     margin-bottom: 10px;
 }
 
-.related-post-slider .owl-prev,
-.related-post-slider .owl-next {
+.related-post-slider .owl-prev, .related-post-slider .owl-next {
     position: absolute;
     top: -60px;
     border: 1px solid #ebebeb;
@@ -1365,11 +1328,9 @@ li {
     margin-left: 130px;
 }
 
-
 .single_comment_area ol li.single_comment_area:after {
     display: none;
 }
-
 
 .comment-wrapper {
     margin-bottom: 30px;
@@ -1426,6 +1387,7 @@ li {
 }
 
 /* Bg Pattern */
+
 .bg-pattern {
     background-attachment: fixed;
     background-position: center center;
@@ -1434,6 +1396,7 @@ li {
     background-size: cover;
     z-index: 1;
 }
+
 .bg-pattern:after {
     position: absolute;
     width: 100%;
@@ -1446,22 +1409,22 @@ li {
 }
 
 #pattern-switcher {
-	width: 120px;
-	background-color: #fc6c3f;
-	position: fixed;
-	top: 15%;
-	z-index: 9999;
-	cursor: pointer;
-	height: 50px;
+    width: 120px;
+    background-color: #fc6c3f;
+    position: fixed;
+    top: 15%;
+    z-index: 9999;
+    cursor: pointer;
+    height: 50px;
     right: 0;
     color: #fff;
-	font-size: 12px;
-	line-height: 50px;
-	text-align: center;
-	text-transform: uppercase;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
     letter-spacing: 1px;
     -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
+    transition-duration: 500ms;
 }
 
 #pattern-switcher.pattern-remove {
@@ -1469,21 +1432,21 @@ li {
 }
 
 #pattern-switcher:hover {
-	background-color: #e3410e;
+    background-color: #e3410e;
 }
 
-#patter-close > i {
-	position: fixed;
-	width: 20px;
-	height: 20px;
-	background-color: #111;
-	font-size: 11px;
-	line-height: 20px;
-	border-radius: 50%;
-	right: 110px;
-	top: calc(15% - 10px);
-	text-align: center;
-	z-index: 99999;
-	color: #fff;
-	cursor: pointer;
+#patter-close>i {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #111;
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 50%;
+    right: 110px;
+    top: calc(15% - 10px);
+    text-align: center;
+    z-index: 99999;
+    color: #fff;
+    cursor: pointer;
 }
